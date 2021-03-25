@@ -1,7 +1,6 @@
-#from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.feature_extraction.text import CountVectorizer
 
 text = ["London Paris London", "Paris Paris London"]
 cv = CountVectorizer()
 count_matrix = cv.fit_transform(text)
-print(text)
 print(count_matrix.toarray())
